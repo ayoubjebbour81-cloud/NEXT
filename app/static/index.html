@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="NEXT helps you decide what to do next."
+    >
+    <title>NEXT</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main>
+        <header class="hero">
+            <div class="brand">NEXT<span>→</span></div>
+
+            <h1>Think less.<br>Move forward.</h1>
+
+            <p>
+                Tell NEXT what's blocking you.<br>
+                Get one clear action to move forward.
+            </p>
+        </header>
+
+        <section class="input-section">
+            <label for="problem" class="sr-only">
+                Tell NEXT what you're facing
+            </label>
+
+            <textarea
+                id="problem"
+                placeholder="I have a business idea, but I don't know if people will pay for it..."
+                rows="6"
+            ></textarea>
+
+            <button id="next-button" type="button">
+                <span>NEXT</span>
+                <span class="arrow">→</span>
+            </button>
+        </section>
+
+        <section id="result" class="result-card" hidden>
+            <p class="result-label">NEXT SAYS</p>
+
+            <p id="action" class="action"></p>
+
+            <div class="reason-block">
+                <h2>Why this matters</h2>
+                <p id="reason"></p>
+            </div>
+        </section>
+
+        <p id="error-message" class="error-message" hidden></p>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
